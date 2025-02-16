@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <BorderPane prefHeight="109.0" prefWidth="652.0" BorderPane.alignment="CENTER">
+         <top>
+            <Label alignment="TOP_CENTER" prefHeight="34.0" prefWidth="229.0" text="Cricket Score Board" textAlignment="CENTER" textFill="#0d0d00" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+         </top>
+         <center>
+            <GridPane prefHeight="68.0" prefWidth="571.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="383.0" minWidth="10.0" prefWidth="373.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="134.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="101.0" text="    TEAM 1" />
+                  <Label GridPane.rowIndex="1" />
+                  <TextField fx:id="Team_1" prefHeight="25.0" prefWidth="271.0" promptText="Enter Team Name" GridPane.columnIndex="1" />
+                  <TextField fx:id="Team_2" promptText="Enter Team Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label prefHeight="17.0" prefWidth="100.0" text="    TEAM 2" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="T20" mnemonicParsing="false" onAction="#TAction" prefHeight="17.0" prefWidth="90.0" text="T20(20 over)" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <RadioButton fx:id="ODI" mnemonicParsing="false" onAction="#OAction" text="ODI(50 over)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="132.0" prefWidth="669.0" BorderPane.alignment="CENTER">
+         <center>
+            <GridPane prefHeight="156.0" prefWidth="627.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="384.0" minWidth="3.0" prefWidth="77.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.0" minWidth="10.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="482.0" minWidth="10.0" prefWidth="162.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="Btn3" mnemonicParsing="false" onAction="#Ball3" prefHeight="43.0" prefWidth="79.0" text="3" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Btn6" mnemonicParsing="false" onAction="#BALL6" prefHeight="39.0" prefWidth="78.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Btn2" mnemonicParsing="false" onAction="#Ball2" prefHeight="33.0" prefWidth="82.0" text="2" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="Btn5" mnemonicParsing="false" onAction="#BALL5" prefHeight="33.0" prefWidth="81.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="BtnWB" mnemonicParsing="false" onAction="#WideBall" prefHeight="33.0" prefWidth="78.0" text="WIDE BALL" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="Btn1" mnemonicParsing="false" onAction="#Ball1" prefHeight="41.0" prefWidth="69.0" text="1">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="Btn4" mnemonicParsing="false" onAction="#BALL4" prefHeight="45.0" prefWidth="69.0" text="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="BtnNB" mnemonicParsing="false" onAction="#NoBall" prefHeight="40.0" prefWidth="76.0" text="NO BALL" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="BtnDot" mnemonicParsing="false" onAction="#DotBall" prefHeight="43.0" prefWidth="69.0" text="DOT" GridPane.rowIndex="2" />
+                  <Button fx:id="BtnWicket" mnemonicParsing="false" onAction="#WICKET" prefHeight="46.0" prefWidth="76.0" text="Wicket" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="save" mnemonicParsing="false" onAction="#Save" prefHeight="30.0" prefWidth="154.0" text="SAVE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </bottom>
+   <center>
+      <GridPane prefHeight="402.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="103.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="99.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="102.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="99.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="108.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="114.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="162.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="172.0" minHeight="10.0" prefHeight="145.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="BASELINE_RIGHT" prefHeight="47.0" prefWidth="104.0" text="RUN    " GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="108.0" text="  Team 1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="55.0" prefWidth="104.0" text="  Team 2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="108.0" text="OVER   " GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="102.0" text="WICKET   " GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="Run" editable="false" prefHeight="47.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="Over" editable="false" prefHeight="46.0" prefWidth="114.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="Wicket" editable="false" prefHeight="45.0" prefWidth="99.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="Wicket_Team_1" editable="false" prefHeight="49.0" prefWidth="102.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="Run_Team_1" editable="false" prefHeight="49.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="Run_Team_2" editable="false" prefHeight="51.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="Wicket_Team_2" editable="false" prefHeight="51.0" prefWidth="102.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

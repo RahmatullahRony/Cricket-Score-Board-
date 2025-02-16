@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <left>
+      <GridPane prefHeight="450.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="6.0" prefWidth="32.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="168.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="35.0" prefWidth="167.0" text="TEAM 1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Label>
+            <TextField fx:id="T1p1" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="T1p2" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="T1p3" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="T1p4" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="T1p5" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="T1p" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="T1p" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="T1p8" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="T1p9" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="T1p10" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <TextField fx:id="T1p11" promptText="ENTER PLAYER NAME" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="156.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="44.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Label" GridPane.rowIndex="2" />
+            <Label text="Label" GridPane.rowIndex="3" />
+            <Label text="Label" GridPane.rowIndex="4" />
+            <Label prefHeight="35.0" prefWidth="156.0" text="TEAM 2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font></Label>
+            <Label text="Label" GridPane.rowIndex="5" />
+            <Label text="Label" GridPane.rowIndex="6" />
+            <Label text="Label" GridPane.rowIndex="7" />
+            <Label text="Label" GridPane.rowIndex="8" />
+            <Label text="Label" GridPane.rowIndex="9" />
+            <Label text="Label" GridPane.rowIndex="10" />
+            <Label text="Label" GridPane.rowIndex="11" />
+            <Label text="Label" GridPane.rowIndex="12" />
+            <TextField fx:id="T2p1" promptText="ENTER PLAYER NAME" GridPane.rowIndex="2" />
+            <TextField fx:id="T2p2" promptText="ENTER PLAYER NAME" GridPane.rowIndex="3" />
+            <TextField fx:id="T2p3" promptText="ENTER PLAYER NAME" GridPane.rowIndex="4" />
+            <TextField fx:id="T2p4" promptText="ENTER PLAYER NAME" GridPane.rowIndex="5" />
+            <TextField fx:id="T2p5" promptText="ENTER PLAYER NAME" GridPane.rowIndex="6" />
+            <TextField fx:id="T2p6" promptText="ENTER PLAYER NAME" GridPane.rowIndex="7" />
+            <TextField fx:id="T2p7" promptText="ENTER PLAYER NAME" GridPane.rowIndex="8" />
+            <TextField fx:id="T2p8" promptText="ENTER PLAYER NAME" GridPane.rowIndex="9" />
+            <TextField fx:id="T2p9" promptText="ENTER PLAYER NAME" GridPane.rowIndex="10" />
+            <TextField fx:id="T2p10" promptText="ENTER PLAYER NAME" GridPane.rowIndex="11" />
+            <TextField fx:id="T2p11" promptText="ENTER PLAYER NAME" GridPane.rowIndex="12" />
+         </children>
+      </GridPane>
+   </right>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="5.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="Start" mnemonicParsing="false" onAction="#Start" prefHeight="55.0" prefWidth="114.0" text="START" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <top>
+      <Label text="Player Score Board " BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
