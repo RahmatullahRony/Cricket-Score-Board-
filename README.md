@@ -1,6 +1,6 @@
 #  Cricket-Score-Board-by using Java 
 
-- A cricket score board by using javafx and java 
+- A cricket score board by using javafx and mySqp database
 
 ![3](https://github.com/user-attachments/assets/ae87ca76-2822-40f9-9676-fcbff6979fcb)
 
